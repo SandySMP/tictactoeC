@@ -10,11 +10,12 @@ int main() {
     while(count < 9 && winner != 1){
         flag=0;
         printf("\n");
-        printf("%c|%c|%c,\n", pos[0], pos[1], pos[2]);
         printf("-+-+-\n");
-        printf("%c|%c|%c,\n", pos[3], pos[4], pos[5]);
+        printf("%c|%c|%c\n", pos[0], pos[1], pos[2]);
         printf("-+-+-\n");
-        printf("%c|%c|%c,\n", pos[6], pos[7], pos[8]);
+        printf("%c|%c|%c\n", pos[3], pos[4], pos[5]);
+        printf("-+-+-\n");
+        printf("%c|%c|%c\n", pos[6], pos[7], pos[8]);
         printf("-+-+-\n");
         if(count % 2 == 0){
             sign = 'X';
@@ -70,11 +71,12 @@ int main() {
 }
 void win(int player, int winner, int pos[]){
     printf("\n");
-    printf("%c|%c|%c,\n", pos[0], pos[1], pos[2]);
     printf("-+-+-\n");
-    printf("%c|%c|%c,\n", pos[3], pos[4], pos[5]);
+    printf("%c|%c|%c\n", pos[0], pos[1], pos[2]);
     printf("-+-+-\n");
-    printf("%c|%c|%c,\n", pos[6], pos[7], pos[8]);
+    printf("%c|%c|%c\n", pos[3], pos[4], pos[5]);
+    printf("-+-+-\n");
+    printf("%c|%c|%c\n", pos[6], pos[7], pos[8]);
     printf("-+-+-\n");
 
     if(winner){
